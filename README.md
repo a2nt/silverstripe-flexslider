@@ -1,10 +1,9 @@
 
 # SilverStripe Flexslider
 
+[![CI](https://github.com/dynamic/silverstripe-flexslider/actions/workflows/ci.yml/badge.svg)](https://github.com/dynamic/silverstripe-flexslider/actions/workflows/ci.yml)
 [![Build Status](https://travis-ci.org/dynamic/silverstripe-flexslider.svg?branch=master)](https://travis-ci.org/dynamic/silverstripe-flexslider)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/dynamic/silverstripe-flexslider/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/dynamic/silverstripe-flexslider/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/dynamic/silverstripe-flexslider/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/dynamic/silverstripe-flexslider/?branch=master)
-[![Build Status](https://scrutinizer-ci.com/g/dynamic/silverstripe-flexslider/badges/build.png?b=master)](https://scrutinizer-ci.com/g/dynamic/silverstripe-flexslider/build-status/master)
 [![codecov.io](https://codecov.io/github/dynamic/silverstripe-flexslider/coverage.svg?branch=master)](https://codecov.io/github/dynamic/silverstripe-flexslider?branch=master)
 
 [![Latest Stable Version](https://poser.pugx.org/dynamic/flexslider/v/stable)](https://packagist.org/packages/dynamic/flexslider)
@@ -24,6 +23,10 @@ The FlexSlider module allows a developer to attach a [Woothemes FlexSlider](http
 
 `composer require dynamic/flexslider ^4.0`
 
+## License
+
+See [License](license.md)
+
 ## Documentation
 
 See the [docs/en](docs/en/index.md) folder.
@@ -33,6 +36,16 @@ See the [docs/en](docs/en/index.md) folder.
 - I've applied the `FlexSlider` DataExtension to a DataObject or Page and am receiving errors.
   - Be sure you have run a `dev/build?flush=all`
   - If this is an existing site installation and `FlexSlider` is being applied to existing records, be sure to run `dev/tasks/SlideThumbnailNavMigrationTask`. This will ensure default values expected for the module are setup for the existing records.
+
+## Translations
+
+The translations for this project are managed via [Transifex](https://www.transifex.com/dynamicagency/silverstripe-flexslider/)
+and are updated automatically during the release process. To contribute, please head to the link above and get
+translating!
+
+## Maintainer Contact
+
+ *  [Dynamic](http://www.dynamicagency.com) (<dev@dynamicagency.com>)
 
 ## Bugtracker
 Bugs are tracked in the issues section of this repository. Before submitting an issue please read over 
@@ -48,9 +61,6 @@ If the issue does look like a new bug:
  
 Please report security issues to the module maintainers directly. Please don't file security issues in the bugtracker.
 
-## Maintainer Contact
 
- *  [Dynamic](http://www.dynamicagency.com) (<dev@dynamicagency.com>)
-
-## License
-See [License](license.md)
+## Development and contribution
+If you would like to make contributions to the module please ensure you raise a pull request and discuss with the module maintainers.
