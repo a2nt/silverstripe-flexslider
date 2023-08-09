@@ -19,7 +19,7 @@
 	"license": "BSD-3-Clause",
 	"type": "silverstripe-vendormodule",
 	"require": {
-		"silverstripe/recipe-cms": "^1.0 || ^4.0",
+		"silverstripe/recipe-cms": "^1.0 || ^4.0 || ^5 ",
 		"silverstripe/asset-admin": "*",
 		"silverstripe/vendor-plugin": "*",
 		"gorriecoe/silverstripe-linkfield": "*",
