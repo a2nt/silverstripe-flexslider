@@ -2,9 +2,8 @@
 
 namespace Dynamic\FlexSlider\Model;
 
-use function GuzzleHttp\Psr7\parse_request;
-
 use gorriecoe\Embed\Models\Embed;
+
 use gorriecoe\Link\Models\Link;
 use gorriecoe\LinkField\LinkField;
 use SilverShop\HasOneField\HasOneButtonField;
@@ -20,6 +19,7 @@ use SilverStripe\ORM\DataObject;
 use SilverStripe\Security\Permission;
 use SilverStripe\Security\PermissionProvider;
 use UncleCheese\DisplayLogic\Forms\Wrapper;
+use function GuzzleHttp\Psr7\parse_request;
 
 /**
  * Class SlideImage
@@ -63,7 +63,7 @@ class SlideImage extends DataObject implements PermissionProvider
      */
     private static $has_one = [
         'Image' => Image::class,
-        'Video' => Embed::class,
+        //'Video' => Embed::class,
         'Page' => \Page::class,
         'PageLink' => SiteTree::class,
         'SlideLink' => Link::class,
@@ -205,13 +205,13 @@ class SlideImage extends DataObject implements PermissionProvider
                     Wrapper::create(
                         $image
                     )->displayIf('SlideType')->isEqualTo('Image')->orIf('SlideType')->isEqualTo('Video')->end(),
-                    Wrapper::create(
+                    /*Wrapper::create(
                         $videoField = HasOneButtonField::create(
                             'Video',
                             'Video',
                             $this
                         )
-                    )->displayIf('SlideType')->isEqualTo('Video')->end()
+                    )->displayIf('SlideType')->isEqualTo('Video')->end()*/
                 ))->setName('MediaFields'),
                 'Description'
             );
