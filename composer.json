@@ -21,10 +21,7 @@
 	"require": {
 		"silverstripe/recipe-cms": "^1.0 || ^4.0 || ^5 ",
 		"silverstripe/asset-admin": "*",
-		"silverstripe/vendor-plugin": "*",
-		"gorriecoe/silverstripe-linkfield": "*",
-        "gorriecoe/silverstripe-embed": "*",
-		"symbiote/silverstripe-gridfieldextensions": "*"
+		"silverstripe/vendor-plugin": "*"
 	},
 	"require-dev": {
 		"phpunit/phpunit": "^5.7",
